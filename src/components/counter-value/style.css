@@ -1,0 +1,8 @@
+.dashBox{
+    border: dotted black 3px;
+    width: 20%;
+    height: 80px;
+    display: grid;
+    place-items: center;
+    margin: 0px auto;
+  }

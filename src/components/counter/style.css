@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+html, body {
+  height: 100%;
+}
+
+body {
+ 
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+main {
+  height: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 500;
+  margin: 0 auto 0.5em;
+}
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 1.75em;
+  }
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.25em;
+}
+p:first-of-type {
+  margin-bottom: 0.5em;
+}
+.dashedBox {
+  border: dotted black 3px;
+  width: 20%;
+  height: 200px;
+ 
+  margin: 0px auto;
+}
+hr {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px dashed white;
+  margin-bottom: 2em;
+}
+
+div.counter {
+  width: 150px;
+  margin: 1em auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border-radius: 4px;
+}
+button {
+  width: 45px;
+  /* background: #61dafb; */
+ background:transparent;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0.5em 1em;
+  /* border: 0; */
+  border-radius: 4px;
+  cursor: pointer;
+ 
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  margin: 4px;
+  border: 4px dashed #000;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #000 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+button.add {
+  border-radius: 0 4px 4px 4px;
+  background-color: #a54946 !important;
+  color: #fff;
+}
+button.sub {
+  border-radius: 4px 4px 4px 4px;
+  border-color: #a54946 !important;
+  outline-color: #a54946 !important;
+  color: #a54946;
+}
+
+button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background: lightgray;
+}
+button:disabled:hover {
+  background-color: lightgray;
+}
